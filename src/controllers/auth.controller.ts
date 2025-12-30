@@ -5,16 +5,17 @@
 
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
+import config from '../config/env.config';
 
 export const loginController = async (req: Request, res: Response): Promise<void> => {
     try {
-        const { password } = req.body;
+        const { email, password } = req.body;
 
-        // Check static password
-        if (password !== process.env.STATIC_PASSWORD) {
+        // Check static email and password
+        if (email !== config.admin.email || password !== config.admin.password) {
             res.status(401).json({
                 success: false,
-                message: 'Invalid password'
+                message: 'Invalid email or password'
             });
             return;
         }
@@ -22,14 +23,14 @@ export const loginController = async (req: Request, res: Response): Promise<void
         // Generate JWT token valid for 12 hours
         const token = jwt.sign(
             { userId: 'admin-user' },
-            process.env.JWT_SECRET!,
+            config.jwtSecret,
             { expiresIn: '12h' }
         );
 
         // Set secure HTTP-only cookie
         res.cookie('authToken', token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === 'production',
+            secure: config.nodeEnv === 'production',
             sameSite: 'strict',
             maxAge: 12 * 60 * 60 * 1000 // 12 hours
         });

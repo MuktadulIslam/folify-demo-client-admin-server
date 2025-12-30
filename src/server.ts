@@ -7,6 +7,8 @@ import express, { Application, Request, Response } from 'express';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import swaggerUi from 'swagger-ui-express';
+import swaggerSpec from './config/swagger';
 
 // Import routes
 import authRoutes from './routes/auth.routes';
@@ -35,13 +37,17 @@ app.use((req: Request, res: Response, next) => {
     next();
 });
 
+// Swagger documentation route
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+
 // Health check route
 app.get('/', (req: Request, res: Response) => {
     res.status(200).json({
         success: true,
         message: 'LMS Backend API is running',
         version: '1.0.0',
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
+        documentation: '/api-docs'
     });
 });
 
