@@ -1,0 +1,232 @@
+{
+    "courses": [
+        {
+            "id": "CRS001",
+            "slug": "complete-web-development-bootcamp",
+            "index": 1,
+            "isAvailableInWebsite": true,
+            "name": "Complete Web Development Bootcamp 2024",
+            "shortDescription": "Master web development from scratch with HTML, CSS, JavaScript, React, Node.js and become a full-stack developer",
+            "description": "This comprehensive bootcamp will take you from zero to hero in web development. You'll learn frontend technologies like HTML5, CSS3, JavaScript ES6+, React.js, and backend with Node.js, Express, and MongoDB.",
+            "courseDetails": [
+                {
+                    "icon": "clock",
+                    "key": "Duration",
+                    "value": "6 Months"
+                },
+                {
+                    "icon": "video",
+                    "key": "Total Videos",
+                    "value": "250+"
+                },
+                {
+                    "icon": "project",
+                    "key": "Projects",
+                    "value": "15+"
+                }
+            ],
+            "type": "Online",
+            "courseCategory": "One Time Fee",
+            "courseStreamId": "CS001",
+            "teachers": [
+                {
+                    "name": "Dr. Morshed Alam",
+                    "id": "ADM003",
+                    "image": "https://example.com/teachers/morshed.jpg"
+                }
+            ],
+            "price": 15000,
+            "publishDate": "2024-01-15T00:00:00.000Z",
+            "offerPrice": 12000,
+            "isOnOffer": true,
+            "offerExpiryDate": "2024-12-31T23:59:59.000Z",
+            "status": "active",
+            "trailer": "https://youtube.com/watch?v=trailer1",
+            "isAffiliated": true,
+            "expiryDate": "2025-12-31T23:59:59.000Z",
+            "reviewable": true,
+            "reviews": {
+                "numberOfReviews": 150,
+                "reviewScore": 700,
+                "review": 4.67
+            },
+            "routineImageUrl": "https://example.com/routines/crs001.jpg",
+            "thumbnailUrl": "https://example.com/thumbnails/crs001.jpg",
+            "isDeleted": false,
+            "createdBy": "ADM001",
+            "createdAt": "2024-01-15T00:00:00.000Z",
+            "updatedAt": "2024-01-15T00:00:00.000Z"
+        },
+        {
+            "id": "CRS002",
+            "slug": "mobile-app-development-flutter",
+            "index": 2,
+            "isAvailableInWebsite": true,
+            "name": "Mobile App Development with Flutter",
+            "shortDescription": "Build beautiful cross-platform mobile applications for iOS and Android using Flutter and Dart",
+            "description": "Learn to create stunning mobile apps using Google's Flutter framework. This course covers everything from basic widgets to state management and backend integration.",
+            "courseDetails": [
+                {
+                    "icon": "clock",
+                    "key": "Duration",
+                    "value": "4 Months"
+                },
+                {
+                    "icon": "video",
+                    "key": "Total Videos",
+                    "value": "180+"
+                },
+                {
+                    "icon": "project",
+                    "key": "Projects",
+                    "value": "10+"
+                }
+            ],
+            "type": "Online",
+            "courseCategory": "One Time Fee",
+            "courseStreamId": "CS002",
+            "teachers": [
+                {
+                    "name": "Dr. Farzana Ahmed",
+                    "id": "ADM007",
+                    "image": "https://example.com/teachers/farzana.jpg"
+                }
+            ],
+            "price": 12000,
+            "publishDate": "2024-01-20T00:00:00.000Z",
+            "status": "active",
+            "isAffiliated": false,
+            "reviewable": true,
+            "reviews": {
+                "numberOfReviews": 98,
+                "reviewScore": 470,
+                "review": 4.80
+            },
+            "thumbnailUrl": "https://example.com/thumbnails/crs002.jpg",
+            "isDeleted": false,
+            "createdBy": "ADM001",
+            "createdAt": "2024-01-20T00:00:00.000Z",
+            "updatedAt": "2024-01-20T00:00:00.000Z"
+        },
+        {
+            "id": "CRS003",
+            "slug": "data-science-machine-learning-bootcamp",
+            "index": 3,
+            "isAvailableInWebsite": true,
+            "name": "Data Science & Machine Learning Bootcamp",
+            "shortDescription": "Master data science, machine learning, deep learning with Python, pandas, scikit-learn, and TensorFlow",
+            "description": "Comprehensive bootcamp covering data analysis, visualization, machine learning algorithms, and deep learning. Perfect for aspiring data scientists.",
+            "courseDetails": [
+                {
+                    "icon": "clock",
+                    "key": "Duration",
+                    "value": "8 Months"
+                },
+                {
+                    "icon": "video",
+                    "key": "Total Videos",
+                    "value": "300+"
+                },
+                {
+                    "icon": "project",
+                    "key": "Projects",
+                    "value": "20+"
+                }
+            ],
+            "type": "Online",
+            "courseCategory": "One Time Fee",
+            "courseStreamId": "CS003",
+            "teachers": [
+                {
+                    "name": "Dr. Kamrul Islam",
+                    "id": "ADM010",
+                    "image": "https://example.com/teachers/kamrul.jpg"
+                }
+            ],
+            "price": 20000,
+            "publishDate": "2024-02-01T00:00:00.000Z",
+            "offerPrice": 16000,
+            "isOnOffer": true,
+            "offerExpiryDate": "2024-12-31T23:59:59.000Z",
+            "status": "active",
+            "isAffiliated": true,
+            "reviewable": true,
+            "reviews": {
+                "numberOfReviews": 210,
+                "reviewScore": 990,
+                "review": 4.71
+            },
+            "thumbnailUrl": "https://example.com/thumbnails/crs003.jpg",
+            "isDeleted": false,
+            "createdBy": "ADM001",
+            "createdAt": "2024-02-01T00:00:00.000Z",
+            "updatedAt": "2024-02-01T00:00:00.000Z"
+        }
+    ],
+    "batches": [
+        {
+            "id": "BATCH001",
+            "index": 1,
+            "name": "Batch 2024-A",
+            "description": "First batch of 2024 for Web Development Bootcamp",
+            "courseId": "CRS001",
+            "branchId": "BRN001",
+            "createdBy": "ADM002",
+            "isDeleted": false,
+            "createdAt": "2024-01-10T00:00:00.000Z",
+            "updatedAt": "2024-01-10T00:00:00.000Z"
+        }
+    ],
+    "coupons": [
+        {
+            "id": "CPN001",
+            "name": "NEWYEAR2024",
+            "discountType": "Percentage",
+            "discountAmount": 20,
+            "discountCurrency": "BDT",
+            "issuedAt": "2024-01-01T00:00:00.000Z",
+            "expiredAt": "2024-12-31T23:59:59.000Z",
+            "usageLimit": {
+                "globalLimit": 500,
+                "userLimit": 1
+            },
+            "isDeleted": false,
+            "createdAt": "2024-01-01T00:00:00.000Z",
+            "updatedAt": "2024-01-01T00:00:00.000Z"
+        }
+    ],
+    "admissions": [
+        {
+            "id": "ADM_ENR001",
+            "studentId": "STU001",
+            "courseId": "CRS001",
+            "batchId": "BATCH001",
+            "branchId": "BRN001",
+            "status": "Active",
+            "payStatus": "Paid",
+            "price": 15000,
+            "discount": 3000,
+            "totalAmount": 12000,
+            "paidAmount": 12000,
+            "discountReason": "New Year Offer",
+            "couponId": "CPN001",
+            "createdAt": "2024-01-16T00:00:00.000Z",
+            "updatedAt": "2024-01-16T00:00:00.000Z"
+        }
+    ],
+    "blogs": [
+        {
+            "id": "BLOG001",
+            "slug": "future-of-web-development-2024",
+            "title": "The Future of Web Development in 2024",
+            "description": "Explore the latest trends and technologies shaping web development in 2024...",
+            "categoryId": "BLOGCAT001",
+            "teacherId": "ADM003",
+            "thumbnail": "https://example.com/blogs/blog001.jpg",
+            "status": "published",
+            "isDeleted": false,
+            "createdAt": "2024-02-01T00:00:00.000Z",
+            "updatedAt": "2024-02-01T00:00:00.000Z"
+        }
+    ]
+}
